@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고민 들어주기"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:layout_gravity="left" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/moon"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_title"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/d"
+            android:text="게시글이이이이이이이이이이이이이이이이이이이이잉"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right|center"
+            android:background="@android:drawable/ic_menu_edit" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:background="#e8effc">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textview_maintext"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:text="글내용이 들어갈 칸"
+                android:fontFamily="@font/d"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="16dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/button_like"
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/heart2" />
+
+            <TextView
+                android:id="@+id/text99"
+                android:layout_width="50dp"
+                android:fontFamily="@font/d"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_weight="1"
+                android:text="공감하기"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_like"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="10"
+            android:textSize="15dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/button_oldchat"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/hashtag_button"
+            android:layout_gravity="right|center"
+            android:text="이전 대화보기"
+            android:fontFamily="@font/d"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/send_button"
+            android:textColor="#fffdde"
+            android:layout_gravity="right|center"
+            android:text="이 방 입장하기"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"/>
+
+    </LinearLayout>
+
+</LinearLayout>

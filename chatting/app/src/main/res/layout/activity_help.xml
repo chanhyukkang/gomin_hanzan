@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.hotsix.gomin_hanjan.ChattingRoomMake">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의하기"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/moon"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/d"
+            android:text="문의하기"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/d"
+                android:gravity="center"
+                android:text="제목       " />
+
+            <EditText
+                android:id="@+id/edit_help_title"
+                android:fontFamily="@font/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/d"
+                android:layout_height="match_parent"
+                android:text="문의사유" />
+
+            <Spinner
+                android:id="@+id/spinner_sayou"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/d"
+                android:spinnerMode="dialog"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/d"
+                android:gravity="center"
+                android:text="문의 내용"/>
+
+            <EditText
+                android:id="@+id/edit_help_contents"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/d"
+                android:layout_height="300dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/button_ok"
+                android:text="문의하기"
+                android:fontFamily="@font/d"
+                android:background="@drawable/send_button"
+                android:textStyle="bold"
+                android:textColor="#fffdde"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/button_back"
+                android:text="돌아가기"
+                android:background="@drawable/hashtag_button"
+                android:fontFamily="@font/d"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

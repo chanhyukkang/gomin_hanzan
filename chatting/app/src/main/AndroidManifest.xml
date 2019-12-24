@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hwan.chatting">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="고민한잔"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.hotsix.gomin_hanjan.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Tab_Write_Form" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.ChattingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.hotsix.gomin_hanjan.ChattingAdapter" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.TabFragment1" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.TabFragment2" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.TabFragment3" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.ChattingRoomMake" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.ChattingRoomReMake" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Login" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.SignUp" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.MusicShare" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.SignUp_Promise" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.ReadPost" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.PyojungSelect" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.BgmList" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.FindPassword" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Help" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Level" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Promise" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.TagApply" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.UseDocs" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.BackgroundSelect" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Profile" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.Report" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.OldChatting" />
+        <activity android:name="com.example.hotsix.gomin_hanjan.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

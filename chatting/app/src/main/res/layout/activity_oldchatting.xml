@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/chattingview_old"
+    tools:context="com.example.hotsix.gomin_hanjan.ChattingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#4dfffdde">
+
+            <Button
+                android:id="@+id/favorite_old"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/favoritetoomyung"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/chattingroomname_old"
+                android:layout_width="186dp"
+                android:layout_height="36dp"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/d"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/mainbutton_old"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/jip"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:id="@+id/scrollview_old"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/chat_layout"
+                android:fillViewport="true">
+
+                <ListView
+                    android:id="@+id/chatting_old"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="#000000"
+                    android:dividerHeight="0px">
+
+                </ListView>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00000000"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/entermyroom"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/chat_content"
+            android:background="@drawable/send_button"
+            android:gravity="center"
+            android:fontFamily="@font/d"
+            android:text="내 채팅 방 입장하기"
+            android:textStyle="bold"
+            android:textColor="#fffdde" />
+
+    </LinearLayout>
+
+</RelativeLayout>

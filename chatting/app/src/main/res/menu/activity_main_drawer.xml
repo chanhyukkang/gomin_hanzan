@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/moon"
+            android:title="기분 설정하기" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/moon"
+            android:title="신뢰등급" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/moon"
+            android:title="태그 신청하기" />
+    </group>
+
+    <item android:title="정보">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:title="고민한잔 도움말"
+                />
+            <item
+                android:id="@+id/nav_docs"
+                android:title="이용약관" />
+            <item
+                android:id="@+id/nav_promise"
+                android:title="모두의 약속" />
+            <item
+                android:id="@+id/nav_question"
+                android:title="문의하기" />
+            <item
+                android:id="@+id/nav_nothing"
+                android:title="" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="로그아웃하기" />
+        </menu>
+    </item>
+
+</menu>

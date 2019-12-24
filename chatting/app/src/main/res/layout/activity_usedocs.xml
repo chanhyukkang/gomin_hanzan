@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="고민한잔 이용약관"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:layout_gravity="left" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/moon"/>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10dp" android:text=""/> <!--  빈칸  -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:fontFamily="@font/d"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="여러분을 환영합니다.
+        \n\n다양한 고민한잔 서비스를 즐겨보세요.
+        \n회원으로 가입하시면 고민한잔 서비스를\n보다 편리하게 이용할 수 있습니다.
+        \n여러분이 제공한 콘텐츠를 소중히 다룰 것입니다.
+        \n여러분의 개인정보를 소중히 보호합니다.
+        \n\n타인의 권리를 존중해 주세요.
+        \n고민한잔 서비스 이용과 관련하여 몇 가지 주의사항이 있습니다.
+        \n고민한잔에서 제공하는 신뢰도를 요긴하게 활용해 보세요.
+        \n부득이 서비스 이용을 제한할 경우 합리적인 절차를 준수합니다.
+        \n고민한잔의 잘못은 고민한잔이 책임집니다.
+        \n고민한잔의 일부 서비스에는 광고가 포함되어 있습니다.
+        \n언제든지 고민한잔 서비스 이용계약을 해지하실 수 있습니다.
+        \n서비스 중단 또는 변경 시 꼭 알려드리겠습니다.
+        \n주요 사항을 잘 안내하고 여러분의 소중한 의견에 귀 기울이겠습니다.
+        \n여러분이 쉽게 알 수 있도록 약관 및 운영정책을 게시하며 사전 공지 후 개정합니다."
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bt_main"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="돌아가기"
+        android:fontFamily="@font/d"
+        android:textStyle="bold"
+        android:background="@drawable/hashtag_button"
+        android:textSize="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="모두의 약속"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:layout_gravity="left" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/d"
+        android:text="고민을 나눌 때 지켜주세요!"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/d"
+                    android:text="1. 회원의 의무"
+                     />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:fontFamily="@font/d"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/d"
+                android:text="모든 회원은 상담심리사 자격취득 여부와 상관없이 본 윤리강령을 준수할 의무가 있다.
+윤리강령에 어긋나는 행위를 한 회원은 윤리강령과 '고민한잔'에서 정한 절차에 따라 징계를 받을 수 있다.
+또한, 징계결과를 다른 회원에게 알릴 수 있다."
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:fontFamily="@font/d"
+                    android:text="2. 회원으로서의 태도" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:fontFamily="@font/d"
+                    android:textColor="#ffffff"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/d"
+                android:textColor="#FFFFFF"
+                android:text="모든 회원은 자신의 능력의 한계를 인정하고 교육과 수련, 경험 등에 의해 준비된 역량의 범위 안에서
+전문적인 서비스와 교육을 제공한다.
+자신의 활동분야에 있어서 성실히 활동하고 자신의 자격을 과장하지 않는다."
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/d"
+                    android:text="3. 사회적 책임" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:fontFamily="@font/d"
+                    android:textColor="#ffffff"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/d"
+                android:text="모든 회원은 사회의 윤리와 도덕기준을 존중하고, 사회공익과 상담분야의 발전을 위해 최선을 다한다.
+함께 일하는 다른 전문적 집단의 특성을 존중하고, 상호 협력적 관계를 도모한다.
+상담심리사는 내담자 의뢰나 소개와 관련한 비용을 수취하거나 요구하지 않는다."
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:fontFamily="@font/d"
+                    android:text="4. 내담자의 복지와 권리에 대한 존중"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:textColor="#ffffff"
+                    android:button="@null"
+                    android:fontFamily="@font/d"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/d"
+                android:text="모든 회원의 일차적 책임은 내담자의 복지를 증진하고 존엄성을 존중하는 것이다.
+개인적 욕구충족을 위해서 내담자를 희생시켜서는 안 되며, 내담자로 하여금 의존적인 상담관계를 형성하지 않도록 노력해야 한다.
+모든 인간의 기본적인 권리, 존엄성, 가치를 존중하며 성별, 장애, 나이, 성적 지향, 성별 정체성,
+사회적 신분, 외모, 인종, 가족형태, 종교 등을 이유로 내담자를 차별하지 않는다."
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:fontFamily="@font/d"
+                    android:text="5. 상담관계"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/d"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/d"
+                android:text="모든 회원은 객관성과 전문적인 판단에 영향을 미칠 수 있는 다중 관계는 피해야 한다.
+내담자와 '고민한잔' 밖에서 연애 관계나 기타 사적인 관계를 맺거나 유지하지 않는다.
+내담자 및 내담자의 보호자, 친척 또는 중요한 타인에게 자신의 지위를 이용하여 성희롱 또는 성추행을 포함한 성적 접촉을 해서는 안 된다.
+단체 채팅의 방장 회원은 집단 목표에 부합하는 집단원들을 모집하여 집단상담이 원활히 진행되도록 한다.
+지위를 이용하여 집단원의 권리와 복지를 훼손하지 않는다.
+또한, 집단 과정에서 집단원의 선택의 자유를 존중하고, 이들이 집단 압력으로부터 보호 받을 권리가 있음을 유념한다."
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:fontFamily="@font/d"
+                    android:text="6. 정보의 보호 및 관리"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/d"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/d"
+                android:text="모든 회원은 상담과정에서 알게 된 내담자의 민감 정보를 다룰 때 특별히 주의해야하고,
+상담과 관련된 모든 정보의 관리에 있어 개인정보 보호와 관련된 법을 준수해야한다.
+사생활과 비밀유지에 대한 내담자의 권리를 최대한 존중해야 할 의무가 있다.
+내담자의 생명이나 타인 및 사회의 안전을 위협하는 경우, 내담자의 동의 없이도 내담자에 대한 정보를 관련 전문인이나 사회에 알릴 수 있다.
+집단 상담을 할 경우, 모든 회원은 그 특정 집단에 대한 비밀 보장의 중요성과 한계를 명백히 설명한다."
+                android:textSize="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:fontFamily="@font/d"
+                    android:text="7. 윤리문제 해결"
+                    android:textColor="#FFFFFF" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <CheckBox
+                    android:id="@+id/g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:button="@null"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/d"
+                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                    android:text="지키겠습니다"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/d"
+                android:text="모든 회원은 다른 회원의 윤리강령 위반을 인지한 경우, 그 위반이 심각한 해를 끼치지 않는다면, 우선 해당 회원에게 윤리문제가 있음을 인식시킨다.
+명백한 윤리강령의 위반으로 개인이나 조직이 실질적인 해를 입거나 그럴 가능성이 있는 경우,
+그리고 개별적인 시도로 해결되지 않는 경우, 모든 호원은 '고민한잔' 윤리 위원회에 신고한다."
+                android:textSize="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <CheckBox
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/d"
+                android:theme="@style/MyCheckBox"
+                android:text="모두 지키겠습니다"
+                android:textSize="13dp" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/d"
+                android:background="@drawable/send_button"
+                android:textColor="#fffdde"
+                android:textStyle="bold"
+                android:text="돌아가기"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

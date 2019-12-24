@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/splash"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:text="1. 음악을 공유해 보세요" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/d"
+            android:text="채팅창에서 음악을 공유하려면\n'#노래정보'로 채팅을 보내보세요.\n#으로 시작되는 말풍선을 클릭하면 유튜브로 연결됩니다."
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:text="2. 상대방의 신뢰성을 평가해주세요" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="#이외의 다른 채팅을 클릭해서\n사용자들의 신뢰도를 평가할 수 있습니다.\n좋은 고민 상담자들의 신뢰도는 올려주시고\n악성 사용자들의 신뢰도를 내려주세요!"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:text="3. 보기 싫은 채팅은 삭제해보세요" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="채팅을 길게 클릭하면\n어떤 채팅이든 바로 삭제할 수 있습니다."
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/d"
+            android:textStyle="bold"
+            android:background="@drawable/hashtag_button"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="돌아가기"/>
+    </LinearLayout>
+</RelativeLayout>

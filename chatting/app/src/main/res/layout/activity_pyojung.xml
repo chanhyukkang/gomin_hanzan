@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/splash"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="표정 선택하기"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:layout_gravity="left" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/moon"/>
+    </android.support.v7.widget.Toolbar>
+    <!--//Toolbar-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="현재 기분은 어떤가요?"
+        android:fontFamily="@font/d"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#80ffffff"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="20dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="20dp"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

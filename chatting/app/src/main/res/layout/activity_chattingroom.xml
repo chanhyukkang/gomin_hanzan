@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/listview"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:gravity="left"
+        app:srcCompat="@drawable/happy"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:ellipsize="end"
+            android:fontFamily="@font/d"
+            android:textStyle="bold"
+            android:text="더길다이이이이이이이이이이이이이이"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/d"
+            android:text="chat"
+            android:textColor="#ff848484" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/heart1" />
+        <TextView
+            android:id="@+id/heartnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:textSize="16dp"
+            android:text="10"/>
+
+    </LinearLayout>
+</LinearLayout>

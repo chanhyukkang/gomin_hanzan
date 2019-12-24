@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/layout1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/happy" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="이름" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/layout"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/imageViewleft"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:text="가다나라다러망러"
+            android:textColor="#000000"
+            android:fontFamily="@font/d"
+            android:textSize="16dp" />
+
+        <View
+            android:id="@+id/imageViewright"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

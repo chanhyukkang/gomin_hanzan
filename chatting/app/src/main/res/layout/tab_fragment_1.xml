@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp">
+
+            <Button
+                android:id="@+id/whole"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 전체보기"/>
+            <Button
+                android:id="@+id/whole_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 전체보기"/>
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textSize="11dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 진로" />
+            <Button
+                android:id="@+id/b1_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textSize="11dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 진로" />
+
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 이성" />
+            <Button
+                android:id="@+id/b2_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 이성" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textSize="11dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 취업" />
+            <Button
+                android:id="@+id/b3_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:textSize="11dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 취업" />
+
+            <Button
+                android:id="@+id/b4"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 경제" />
+            <Button
+                android:id="@+id/b4_selected"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 경제" />
+
+        </LinearLayout>>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b5"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:fontFamily="@font/d"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold"
+                android:text="# 외모" />
+            <Button
+                android:id="@+id/b5_selected"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:fontFamily="@font/d"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold"
+                android:text="# 외모" />
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 인간관계" />
+            <Button
+                android:id="@+id/b6_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 인간관계" />
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 가정" />
+            <Button
+                android:id="@+id/b7_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 가정" />
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 학업" />
+            <Button
+                android:id="@+id/b8_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 학업" />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 기타" />
+            <Button
+                android:id="@+id/b9_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_weight="1"
+                android:textSize="11dp"
+                android:background="@drawable/hashtag_button_selected"
+                android:gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="# 기타" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#00000000">
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left|center"
+                android:background="@android:drawable/ic_menu_search"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"/>
+
+            <EditText
+                android:id="@+id/editSearch"
+                android:layout_width="wrap_content"
+                android:layout_weight="10"
+                android:layout_gravity="left|center"
+                android:layout_height="25dp"
+                android:background="@drawable/round_edittext"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/d"
+                android:hint="고민을 찾아보세요" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <Switch
+                android:id="@+id/sorting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="공감순"
+                android:fontFamily="@font/d"
+                android:textColor="#ffffff"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:showText="true"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/refresh">
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="0px"
+                android:layout_y="0px"
+                android:dividerHeight="8dp"
+                android:divider="#00000000"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</RelativeLayout>

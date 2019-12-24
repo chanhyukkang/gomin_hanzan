@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">chatting</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string-array name = "LAN">
+        <item>"신뢰도 UP!"</item>
+        <item>"신뢰도 DOWN"</item>
+        <item>"프로필로 이동하기"</item>
+        <item>"사용자 신고하기"</item>
+    </string-array>
+</resources>
+

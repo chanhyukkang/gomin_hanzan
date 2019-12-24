@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/write"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/d"
+            android:background="@drawable/hashtag_button"
+            android:text="고민 나누기"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#00000000">
+        <Button
+            android:id="@+id/search2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center"
+            android:background="@android:drawable/ic_menu_search"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"/>
+
+        <EditText
+            android:id="@+id/editSearch2"
+            android:layout_width="wrap_content"
+            android:layout_weight="10"
+            android:layout_gravity="left|center"
+            android:layout_height="30dp"
+            android:background="@drawable/round_edittext"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/d"
+            android:hint="고민을 찾아보세요" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <Switch
+            android:id="@+id/sorting2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/d"
+            android:text="공감순"
+            android:textColor="#ffffff"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:showText="true"
+            android:track="@drawable/switch_track_selector"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:gravity="center" />
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/refresh">
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_x="0px"
+            android:layout_y="0px"
+            android:dividerHeight="8dp"
+            android:divider="#00000000"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

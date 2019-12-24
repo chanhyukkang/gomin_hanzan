@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="태그 신청하기"
+            android:textStyle="bold"
+            android:fontFamily="@font/d"
+            android:textColor="#FFFFFF"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:layout_gravity="left" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/moon"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:text="희망 태그" />
+
+        <EditText
+            android:id="@+id/edit_help_title"
+            android:fontFamily="@font/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/d"
+            android:gravity="center"
+            android:text="신청 사유"/>
+
+        <EditText
+            android:id="@+id/edit_help_contents"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/d"
+            android:layout_height="300dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/button_okok"
+            android:fontFamily="@font/d"
+            android:background="@drawable/send_button"
+            android:textColor="#fffdde"
+            android:text="신청하기"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/button_backback"
+            android:fontFamily="@font/d"
+            android:textStyle="bold"
+            android:background="@drawable/hashtag_button"
+            android:text="돌아가기"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

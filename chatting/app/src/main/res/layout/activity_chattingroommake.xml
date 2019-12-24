@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.hotsix.gomin_hanjan.ChattingRoomMake">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/info_layout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/d"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="나의 고민 나누기"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@id/chat_layout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/e1"
+                android:fontFamily="@font/d"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:backgroundTint = "#ffffff"
+                android:textColorHint="#ffffff"
+                android:hint="제목"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:textCursorDrawable="@null"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/info_layout"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/e2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80e8effc"
+                    android:fontFamily="@font/d"
+                    android:textColorHint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:hint="무엇이든 말해보세요"
+                    android:textCursorDrawable="@null"
+                    android:padding="10dp"
+                    android:gravity="top" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/setting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80fffdde"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="82dp"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/d"
+                    android:text="카테고리" />
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:spinnerMode="dialog"
+                    android:fontFamily="@font/d" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/d"
+                    android:textColor="#ffffff"
+                    android:text="나이제한" />
+
+                <EditText
+                    android:id="@+id/edit_min_age"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:text="0"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/d"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/d"
+                    android:layout_marginRight="10dp"
+                    android:text="이상" />
+
+                <EditText
+                    android:id="@+id/edit_max_age"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:text="99"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/d"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/d"
+                    android:text="이하" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/d"
+                    android:text="성별제한" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@+id/checkbox_man"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/checkbox_all"
+                        android:layout_width="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/d"
+                        android:text="모두" />
+                    <RadioButton
+                        android:id="@+id/checkbox_man"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d"
+                        android:text="남자" />
+                    <RadioButton
+                        android:id="@+id/checkbox_girl"
+                        android:layout_width="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d"
+                        android:text="여자" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:fontFamily="@font/d"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content"
+                    android:text="신뢰등급" />
+                <Spinner
+                    android:id="@+id/spinner_trust"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:spinnerMode="dialog"
+                    android:fontFamily="@font/d"
+                    android:layout_marginLeft="16dp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/d"
+                    android:text="이상 입장가능" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp">
+            <Button
+                android:id="@+id/button_makeroom3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/hashtag_button"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/d"
+                android:text="제한 설정 ▲" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button_makeroom2"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:textColor="#fffdde"
+                android:background="@drawable/send_button"
+                android:fontFamily="@font/d"
+                android:textStyle="bold"
+                android:text="고민 나누기" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
